@@ -1,3 +1,4 @@
+-- 写入文件
 local function writefile(filename, info)
     local wfile=io.open(filename, "w") --写入文件(w覆盖)
     assert(wfile)  --打开时验证是否出错		
@@ -5,6 +6,7 @@ local function writefile(filename, info)
     wfile:close()  --调用结束后记得关闭
 end
 
+-- 检测路径是否目录
 local function is_dir(sPath)
     if type(sPath) ~= "string" then return false end
 
@@ -15,17 +17,10 @@ local function is_dir(sPath)
     return false
 end
 
+-- 检测文件是否存在
 local file_exists = function(name)
     local f=io.open(name,"r")
     if f~=nil then io.close(f) return true else return false end
-end
-
--- check image_dir exists
-local check_dir = function(dir)
-    if not is_dir(dir) then
-        os.execute("mkdir -p " .. dir)
-    end
-    return true
 end
 
 local area = nil
@@ -54,8 +49,10 @@ if not file_exists(originalFile) then
     fdfs:set_storage_keepalive(0, 100)
     local data = fdfs:do_download(fileid)
     if data then
-        -- check dir
-        check_dir(ngx.var.image_dir)
+       -- check image dir
+        if not is_dir(ngx.var.image_dir) then
+            os.execute("mkdir -p " .. ngx.var.image_dir)
+        end
         writefile(originalFile, data)
     end
 end
