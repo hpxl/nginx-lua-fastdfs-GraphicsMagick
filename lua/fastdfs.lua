@@ -64,7 +64,7 @@ end
 local image_sizes = {"80x80", "800x600", "40x40", "60x60"};  
 function table.contains(table, element)  
 	for _, value in pairs(table) do  
-    	if value == element then  
+    	if value == element then
         	return true  
         end  
     end  
