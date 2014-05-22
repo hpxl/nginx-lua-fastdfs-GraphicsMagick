@@ -1,18 +1,18 @@
 local function writefile(filename, info)
-    local wfile=io.open(filename, "w") --写入文件(w覆盖)
+	local wfile=io.open(filename, "w") --写入文件(w覆盖)
     assert(wfile)  --打开时验证是否出错		
     wfile:write(info)  --写入传入的内容
     wfile:close()  --调用结束后记得关闭
 end
 
 local function is_dir(sPath)
-  if type(sPath) ~= "string" then return false end
+	if type(sPath) ~= "string" then return false end
 
-  local response = os.execute( "cd " .. sPath )
-  if response == 0 then
-    return true
-  end
-  return false
+	local response = os.execute( "cd " .. sPath )
+  	if response == 0 then
+    	return true
+  	end
+  	return false
 end
 
 local file_exists = function(name)
