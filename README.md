@@ -10,8 +10,10 @@ nginx-lua-fastdfs-GraphicsMagick
 2. [http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg](http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg)
 
 
-参考地址
+参考网址
 ----------------
 1. [https://github.com/openresty/lua-nginx-module](https://github.com/openresty/lua-nginx-module)
 2. [https://github.com/azurewang/Nginx_Lua-FastDFS](https://github.com/azurewang/Nginx_Lua-FastDFS)
-3. [http://rhomobi.com/topics/23](http://rhomobi.com/topics/23)
+3. [https://github.com/azurewang/lua-resty-fastdfs](https://github.com/azurewang/lua-resty-fastdfs)
+4. [http://rhomobi.com/topics/23](http://rhomobi.com/topics/23)
+5. [http://bbs.chinaunix.net/thread-4133106-1-1.html](http://bbs.chinaunix.net/thread-4133106-1-1.html)
