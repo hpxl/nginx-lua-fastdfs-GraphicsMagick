@@ -8,6 +8,7 @@ nginx-lua-fastdfs-GraphicsMagick
 ----------------
 1. [http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg](http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg)
 2. [http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg](http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg)
+3. [http://gi1.md.alicdn.com/imgextra/i1/401612253/T2ASPfXE4XXXXXXXXX_!!401612253.jpg_60x60.jpg](http://gi1.md.alicdn.com/imgextra/i1/401612253/T2ASPfXE4XXXXXXXXX_!!401612253.jpg)
 
 
 参考网址
