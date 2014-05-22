@@ -1,7 +1,14 @@
 nginx-lua-fastdfs-GraphicsMagick
 ==================
-利用nginx lua 获取fastdfs图片，动态生成缩略图，缓存到本地，便于下次直接访问。
+利用nginx lua 获取fastdfs的原图，存放原图到本地，根据不同规则url，例如：_60x60.jpg、_80x80.jpg，利用gm生成缩略图存放到本地。
+第二次访问直接返回本地已生成的缩略图。
 定时凌晨清除一段时间内未访问的图片，节省空间。
+
+图片访问举例
+----------------
+1. [http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg](http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg)
+2. [http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg](http://192.168.1.113/group1/M00/00/00/wKgBcVN0wDiAILQXAAdtg6qArdU189.jpg_80x80.jpg)
+
 
 参考地址
 ----------------
